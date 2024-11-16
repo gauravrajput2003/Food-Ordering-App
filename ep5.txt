@@ -6,4 +6,30 @@ eg: export default Header;(last line) in Header.js file not in App.js file
 
 and import in Ap.js
 below importing react-DOM
-eg. import Header from "./componenent/Header";
+eg. import Header from "./componenent/Header"; 
+if i have more than two things to export then use direlty export
+eg:     export const IMG_URL="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,    q_auto,w_660/";
+        export const LOGO_URL="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQLe_WuOUKelIF0TI27sP0x_PkdAd6CuXG8Q&s";
+        like this 
+        for import same things,
+        import { IMG_URL } from "./Utils/EssenstialLink"; this is other way
+        do manupulation in react ios fadst
+        updating dom efficently
+        super power variable->using hooks known
+         as use state
+         React Hook is norml js fxn,that fxn 
+         ->two imp hooks
+         1) useState() 80%times you use
+         ->supowerful react variable->you have to import from reacy
+         import {useState} from "react"
+         2) useEfffect()
+         whenever state variable update react re render the component
+
+         #behind the secene
+         Reconcillation algorithm(react fibre)
+         virtual dom is a representation of actual dom
+         its object, inside return (
+                //<div>
+                //noramljs object
+         )
+         acdlite ->read from here react fiber archiecture
