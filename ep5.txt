@@ -1,0 +1,9 @@
+break down multiple filr all seperate componenet
+keep in src folder everything
+
+after moving  any componenent from App.js or  from main file to other cmponenet ,make sure export those component on that file , export defalut componenent-name
+eg: export default Header;(last line) in Header.js file not in App.js file
+
+and import in Ap.js
+below importing react-DOM
+eg. import Header from "./componenent/Header";
