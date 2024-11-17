@@ -1,48 +1,61 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Resturantcard from "../Resturantcard ";
-import resList from "../Utils/RawData";
-const Body = () => {
-    //local sttae variables- super powerful variable
-    const [ListofResturant,setListofResturant]=useState(resList);
-    //passed default value []
-    //normal js variable
-   // let reslist=[];
+import Shimmer from "./Shimmer";
 
-    return (
-      <div className="body">
-        <div className="filter">
-            <button className="filter-btn" onClick={()=>{
-                 //filter logic here
-const FilterList=ListofResturant.filter((res)=>res.info.avgRating>4);
-setListofResturant(FilterList);
-            }}>Top-Rated</button>
-        </div>
-        {/* <div className="res-cont">
-          <Resturantcard resData={resList[0]} />
-          <Resturantcard resData={resList[1]} />
-          <Resturantcard resData={resList[2]} />
-          <Resturantcard resData={resList[3]} />
-          <Resturantcard resData={resList[7]} />
-          <Resturantcard resData={resList[5]} />
-          <Resturantcard resData={resList[8]} />
-          <Resturantcard resData={resList[9]} />
-          <Resturantcard resData={resList[10]} />
-          <Resturantcard resData={resList[11]} />
-          <Resturantcard resData={resList[12]} />
-          <Resturantcard resData={resList[13]} />
-          <Resturantcard resData={resList[14]} />
-          <Resturantcard resData={resList[15]} />
-          
-   
-      
-        </div> */}  
-        <div className="res-cont">
-    {ListofResturant.map((resData) => (
-      <Resturantcard key={resData.id} resData={resData} />
-    ))}
-  </div>
+const Body = () => {
+  const [ListofResturant, setListofResturant] = useState([]);
+
+  useEffect(() => {
+    fetchdata();
+  }, []);
+
+  const fetchdata = async () => {
+    try {
+      const data = await fetch(
+        "https://www.swiggy.com/mapi/homepage/getCards?lat=28.6227656&lng=77.05626649999999"
+      );
+      const json = await data.json();
   
-      </div>
-    );
+      // Log the data structure to debug
+      console.log(json);
+  
+      // Extract restaurants
+      const restaurants =
+        json?.data?.success?.cards?.[1]?.gridWidget?.gridElements?.infoWithStyle?.restaurants || [];
+      console.log("Fetched Restaurants:", restaurants);
+      setListofResturant(restaurants);
+    } catch (error) {
+      console.error("Error fetching data:", error);
+    }
   };
-  export default Body;
+  
+
+  if (ListofResturant.length === 0) {
+    return <Shimmer />;
+  }
+
+  return (
+    <div className="body">
+      <div className="filter">
+        <button
+          className="filter-btn"
+          onClick={() => {
+            const FilterList = ListofResturant.filter(
+              (res) => res.info.avgRating > 4
+            );
+            console.log("Filtered List:", FilterList);
+            setListofResturant(FilterList);
+          }}
+        >
+          Top-Rated
+        </button>
+      </div>
+      <div className="res-cont">
+        {ListofResturant.map((resData, index) => (
+          <Resturantcard key={resData.info.id || index} resData={resData} />
+        ))}
+      </div>
+    </div>
+  );
+};
+export default Body;
