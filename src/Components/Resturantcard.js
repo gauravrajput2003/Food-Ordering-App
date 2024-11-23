@@ -1,7 +1,7 @@
-import { IMG_URL } from "./Utils/EssenstialLink";
+import { IMG_URL } from "../Utils/EssenstialLink";
 
 const Resturantcard = (props) => {
-    const { resData } = props;
+    const { resData } = props;//param in fxn
     const{
   cloudinaryImageId,
   name,

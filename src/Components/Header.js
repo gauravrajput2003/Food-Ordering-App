@@ -1,6 +1,10 @@
+import { useState } from "react";
 import { LOGO_URL } from "../Utils/EssenstialLink";
+import { Link } from "react-router-dom";
 
 const Header = () => {
+
+const[btnNameReact,setbtnNameReact]=useState("Login");
     return (
       <div className="header">
         <div className="logo-cont">
@@ -8,10 +12,18 @@ const Header = () => {
         </div>
         <div className="nav-item">
           <ul>
-            <li>Home</li>
-            <li>About us</li>
-            <li>Contact us</li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About</Link> </li>
+            <li><Link to="/contact">Contact</Link></li>
             <li>Cart</li>
+            <button className="login-btn" onClick={()=>{
+if(btnNameReact=="Login"){
+  setbtnNameReact("Logout")
+}
+else{
+  setbtnNameReact("Login")
+}
+            }}>{btnNameReact}</button>
           </ul>
         </div>
       </div>

@@ -2,6 +2,22 @@
     display: flex;
     justify-content: space-between;
     border:  1px solid black;
+    background-color: whitesmoke;
+   
+   
+}
+/* .header:hover{
+  background-color: aquamarine;
+  border: 3px solid black;
+  border-radius: 8px;
+} */
+ul li a {
+  text-decoration: none; 
+  color: inherit;        
+}
+ul li a:hover {
+  color: blue;           
+  text-decoration: ; 
 }
 .logo{
     width: 150px;
@@ -27,6 +43,11 @@ margin: 10px;
 .res-cont{
     display: flex;
     flex-wrap: wrap ;
+}
+.about span{
+color: red;
+margin-left: 10px;
+
 }
 .res-card{
     
@@ -87,17 +108,20 @@ margin: 10px;
     padding: 5px;
   }
   .filter{
-
-    margin: 11px;
+display: flex;
+/* margin-top: 10px; */
   }
   .filter-btn{
-    width: 120px;
+    width: 200px;
+    height: 20px;
     font-weight: 600;
   border: 1px solid black;
-  border-radius: 15px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 10px;
+  
 
 
   }
@@ -114,4 +138,27 @@ cursor: pointer;
     width: 200px;
     height: 400px;
     background-color: #f0f0f0;
+  }
+  .login-btn{
+    padding: 0 35px;
+    cursor: pointer;
+    height: 30px;
+    font-weight: 700;
+    margin-top: 25px;
+    margin-right: 4px;
+    border-radius: 10px;
+    
+  }
+  .login-btn:hover{
+    background-color: blue;
+  }
+  .search-btn{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 70px;
+    margin-left: 1px;
+    border-radius: 7px;
+  }
+  .search-btn:hover{
+    background-color: greenyellow;
   }

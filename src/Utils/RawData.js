@@ -1615,6 +1615,694 @@ const resList= [
       "text": "RESTAURANT_MENU",
       "type": "DEEPLINK"
     }
+  },
+  {
+    "info": {
+        "id": "882414",
+        "name": "The Zaika Darbar",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/10/6988b8ae-8b8b-47b0-9d9d-e040cafd489d_882414.jpg",
+        "locality": " White orchid Plaza Gaur city 2",
+        "areaName": "Gautam Buddha Nagar",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+            "Mughlai",
+            "Tandoor"
+        ],
+        "avgRating": 4.4,
+        "parentId": "398024",
+        "avgRatingString": "4.4",
+        "totalRatingsString": "225",
+        "promoted": true,
+        "adTrackingId": "cid=20961863~p=8~adgrpid=20961863#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=882414~eid=cefc6748-875f-4f38-ac7b-309ae0b4cd78~srvts=1732294004674~collid=45826",
+        "sla": {
+            "deliveryTime": 27,
+            "lastMileTravel": 3,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "3.0 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-22 23:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {},
+                "textExtendedBadges": {},
+                "textBased": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "₹100 OFF",
+            "subHeader": "ABOVE ₹199",
+            "discountTag": "FLAT DEAL",
+            "logoCtx": {
+                "text": "BENEFITS"
+            }
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+        "campaignId": "20961863"
+    },
+    "analytics": {},
+    "cta": {
+        "link": "swiggy://menu?restaurant_id=882414",
+        "text": "RESTAURANT_MENU",
+        "type": "DEEPLINK"
+    }
+},
+{
+    "info": {
+        "id": "407925",
+        "name": "Burger Singh (Big Punjabi Burgers)",
+        "cloudinaryImageId": "972a37599772cdc7df93a0855ad87591",
+        "locality": "Gautam Buddha Nagar",
+        "areaName": "Gaur City 1",
+        "costForTwo": "₹300 for two",
+        "cuisines": [
+            "American",
+            "Continental",
+            "Snacks",
+            "Desserts",
+            "Beverages"
+        ],
+        "avgRating": 4.3,
+        "parentId": "375065",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "6.2K+",
+        "sla": {
+            "deliveryTime": 27,
+            "lastMileTravel": 3.5,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "3.5 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-23 06:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Burger.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "textBased": {},
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "description": "Delivery!",
+                                "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Burger.png"
+                            }
+                        }
+                    ]
+                },
+                "textExtendedBadges": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "50% OFF",
+            "subHeader": "UPTO ₹100",
+            "logoCtx": {
+                "text": "BENEFITS"
+            }
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {},
+    "cta": {
+        "link": "swiggy://menu?restaurant_id=407925",
+        "text": "RESTAURANT_MENU",
+        "type": "DEEPLINK"
+    }
+},
+{
+    "info": {
+        "id": "623615",
+        "name": "EatFit",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/9/25/d047015d-aec0-433c-a1b8-52c97248ad81_623615.jpg",
+        "locality": "Gautam Buddha Nagar",
+        "areaName": "Shahberi",
+        "costForTwo": "₹270 for two",
+        "cuisines": [
+            "Chinese",
+            "Healthy Food",
+            "Tandoor",
+            "Pizzas",
+            "North Indian",
+            "Thalis",
+            "Biryani"
+        ],
+        "avgRating": 4.3,
+        "parentId": "76139",
+        "avgRatingString": "4.3",
+        "totalRatingsString": "2.0K+",
+        "sla": {
+            "deliveryTime": 28,
+            "lastMileTravel": 1.2,
+            "serviceability": "SERVICEABLE",
+            "slaString": "25-30 mins",
+            "lastMileTravelString": "1.2 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-23 01:00:00",
+            "opened": true
+        },
+        "badges": {},
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "textExtendedBadges": {},
+                "textBased": {},
+                "imageBased": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "ITEMS",
+            "subHeader": "AT ₹99",
+            "logoCtx": {
+                "text": "BENEFITS"
+            }
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {},
+    "cta": {
+        "link": "swiggy://menu?restaurant_id=623615",
+        "text": "RESTAURANT_MENU",
+        "type": "DEEPLINK"
+    }
+},
+{
+  "info": {
+      "id": "879431",
+      "name": "Rollsking",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/2/4d52afbb-4088-461e-9362-ff27ec3706fe_879431.jpg",
+      "locality": "Assotech Hi-street",
+      "areaName": "Crossing Republic",
+      "costForTwo": "₹250 for two",
+      "cuisines": [
+          "Fast Food",
+          "Rolls & Wraps",
+          "Beverages"
+      ],
+      "avgRating": 4.1,
+      "parentId": "4697",
+      "avgRatingString": "4.1",
+      "totalRatingsString": "275",
+      "sla": {
+          "deliveryTime": 21,
+          "lastMileTravel": 0.7,
+          "serviceability": "SERVICEABLE",
+          "slaString": "20-25 mins",
+          "lastMileTravelString": "0.7 km",
+          "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+          "nextCloseTime": "2024-11-23 07:00:00",
+          "opened": true
+      },
+      "badges": {
+          "imageBadges": [
+              {
+                  "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Rolls.png",
+                  "description": "Delivery!"
+              }
+          ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+          "entityBadges": {
+              "textExtendedBadges": {},
+              "textBased": {},
+              "imageBased": {
+                  "badgeObject": [
+                      {
+                          "attributes": {
+                              "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Rolls.png",
+                              "description": "Delivery!"
+                          }
+                      }
+                  ]
+              }
+          }
+      },
+      "aggregatedDiscountInfoV3": {
+          "header": "₹100 OFF",
+          "subHeader": "ABOVE ₹199",
+          "discountTag": "FLAT DEAL",
+          "discountCalloutInfo": {
+              "message": "Free Delivery",
+              "logoCtx": {
+                  "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+              }
+          },
+          "logoCtx": {
+              "text": "BENEFITS"
+          }
+      },
+      "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+              "lottie": {},
+              "video": {}
+          }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+          "aggregatedRating": {
+              "rating": "--"
+          }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+  },
+  "analytics": {},
+  "cta": {
+      "link": "swiggy://menu?restaurant_id=879431",
+      "text": "RESTAURANT_MENU",
+      "type": "DEEPLINK"
   }
+},
+{
+  "info": {
+      "id": "788087",
+      "name": "Bikanervala",
+      "cloudinaryImageId": "db7b3eb788170a0cad3d9d9b4f011143",
+      "locality": "Paramount Spectrum",
+      "areaName": "Crossing Republic",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+          "Sweets",
+          "North Indian",
+          "South Indian",
+          "Continental",
+          "Beverages"
+      ],
+      "avgRating": 4.3,
+      "veg": true,
+      "parentId": "45936",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "307",
+      "sla": {
+          "deliveryTime": 19,
+          "lastMileTravel": 0.6,
+          "serviceability": "SERVICEABLE",
+          "slaString": "15-20 mins",
+          "lastMileTravelString": "0.6 km",
+          "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+          "nextCloseTime": "2024-11-22 23:00:00",
+          "opened": true
+      },
+      "badges": {
+          "imageBadges": [
+              {
+                  "imageId": "Rxawards/_CATEGORY-Mithai.png",
+                  "description": "Delivery!"
+              }
+          ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+          "entityBadges": {
+              "textBased": {},
+              "imageBased": {
+                  "badgeObject": [
+                      {
+                          "attributes": {
+                              "description": "Delivery!",
+                              "imageId": "Rxawards/_CATEGORY-Mithai.png"
+                          }
+                      }
+                  ]
+              },
+              "textExtendedBadges": {}
+          }
+      },
+      "aggregatedDiscountInfoV3": {
+          "header": "10% OFF",
+          "discountTag": "FLAT DEAL",
+          "logoCtx": {
+              "text": "BENEFITS"
+          }
+      },
+      "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+              "lottie": {},
+              "video": {}
+          }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+          "aggregatedRating": {
+              "rating": "--"
+          }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+  },
+  "analytics": {},
+  "cta": {
+      "link": "swiggy://menu?restaurant_id=788087",
+      "text": "RESTAURANT_MENU",
+      "type": "DEEPLINK"
+  }
+},
+{
+  "info": {
+      "id": "173389",
+      "name": "The Good Bowl",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/15/59f3635c-1f03-4a9c-bbcb-ee4424bd8972_173389.jpg",
+      "locality": "Gaur Global Village",
+      "areaName": "crossing republic",
+      "costForTwo": "₹400 for two",
+      "cuisines": [
+          "Biryani",
+          "North Indian",
+          "Pastas",
+          "Punjabi",
+          "Desserts",
+          "Beverages"
+      ],
+      "avgRating": 4.3,
+      "parentId": "7918",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "2.0K+",
+      "sla": {
+          "deliveryTime": 28,
+          "lastMileTravel": 1,
+          "serviceability": "SERVICEABLE",
+          "slaString": "25-30 mins",
+          "lastMileTravelString": "1.0 km",
+          "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+          "nextCloseTime": "2024-11-22 23:59:00",
+          "opened": true
+      },
+      "badges": {
+          "textExtendedBadges": [
+              {
+                  "iconId": "guiltfree/GF_Logo_android_3x",
+                  "shortDescription": "options available",
+                  "fontColor": "#7E808C"
+              }
+          ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+          "entityBadges": {
+              "textBased": {},
+              "imageBased": {},
+              "textExtendedBadges": {
+                  "badgeObject": [
+                      {
+                          "attributes": {
+                              "description": "",
+                              "shortDescription": "options available",
+                              "fontColor": "#7E808C",
+                              "iconId": "guiltfree/GF_Logo_android_3x"
+                          }
+                      }
+                  ]
+              }
+          }
+      },
+      "aggregatedDiscountInfoV3": {
+          "header": "ITEMS",
+          "subHeader": "AT ₹149",
+          "discountCalloutInfo": {
+              "message": "Free Delivery",
+              "logoCtx": {
+                  "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+              }
+          },
+          "logoCtx": {
+              "text": "BENEFITS"
+          }
+      },
+      "differentiatedUi": {
+          "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+          "differentiatedUiMediaDetails": {
+              "lottie": {},
+              "video": {}
+          }
+      },
+      "reviewsSummary": {},
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {},
+      "externalRatings": {
+          "aggregatedRating": {
+              "rating": "--"
+          }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+  },
+  "analytics": {},
+  "cta": {
+      "link": "swiggy://menu?restaurant_id=173389",
+      "text": "RESTAURANT_MENU",
+      "type": "DEEPLINK"
+  }
+},
+  {
+    "info": {
+        "id": "314441",
+        "name": "Natural Ice Cream",
+        "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/11/8b3161b1-6329-4654-9074-a30f6dc80ab2_314441.JPG",
+        "locality": "Gaur Global Village",
+        "areaName": "crossing republic",
+        "costForTwo": "₹150 for two",
+        "cuisines": [
+            "Ice Cream",
+            "Desserts"
+        ],
+        "avgRating": 4.7,
+        "veg": true,
+        "parentId": "2093",
+        "avgRatingString": "4.7",
+        "totalRatingsString": "702",
+        "sla": {
+            "deliveryTime": 18,
+            "lastMileTravel": 1,
+            "serviceability": "SERVICEABLE",
+            "slaString": "15-20 mins",
+            "lastMileTravelString": "1.0 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-22 23:59:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "Green%20Dot%20Awards/Best%20In%20Ice%20cream.png",
+                    "description": "Delivery!"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "textExtendedBadges": {},
+                "textBased": {},
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "imageId": "Green%20Dot%20Awards/Best%20In%20Ice%20cream.png",
+                                "description": "Delivery!"
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "10% OFF",
+            "subHeader": "UPTO ₹40",
+            "logoCtx": {
+                "text": "BENEFITS"
+            }
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {},
+    "cta": {
+        "link": "swiggy://menu?restaurant_id=314441",
+        "text": "RESTAURANT_MENU",
+        "type": "DEEPLINK"
+    }
+},
+{
+    "info": {
+        "id": "407887",
+        "name": "The Belgian Waffle Co.",
+        "cloudinaryImageId": "5116a385bac0548e06c33c08350fbf11",
+        "locality": "Orbit Plaza",
+        "areaName": "crossing republic",
+        "costForTwo": "₹200 for two",
+        "cuisines": [
+            "Waffle",
+            "Desserts",
+            "Ice Cream"
+        ],
+        "avgRating": 4.5,
+        "veg": true,
+        "parentId": "2233",
+        "avgRatingString": "4.5",
+        "totalRatingsString": "2.6K+",
+        "sla": {
+            "deliveryTime": 33,
+            "lastMileTravel": 1.1,
+            "serviceability": "SERVICEABLE",
+            "slaString": "30-35 mins",
+            "lastMileTravelString": "1.1 km",
+            "iconType": "ICON_TYPE_EMPTY"
+        },
+        "availability": {
+            "nextCloseTime": "2024-11-23 03:00:00",
+            "opened": true
+        },
+        "badges": {
+            "imageBadges": [
+                {
+                    "imageId": "v1695133679/badges/Pure_Veg111.png",
+                    "description": "pureveg"
+                }
+            ]
+        },
+        "isOpen": true,
+        "type": "F",
+        "badgesV2": {
+            "entityBadges": {
+                "imageBased": {
+                    "badgeObject": [
+                        {
+                            "attributes": {
+                                "imageId": "v1695133679/badges/Pure_Veg111.png",
+                                "description": "pureveg"
+                            }
+                        }
+                    ]
+                },
+                "textExtendedBadges": {},
+                "textBased": {}
+            }
+        },
+        "aggregatedDiscountInfoV3": {
+            "header": "20% OFF",
+            "subHeader": "UPTO ₹50",
+            "logoCtx": {
+                "text": "BENEFITS"
+            }
+        },
+        "differentiatedUi": {
+            "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+            "differentiatedUiMediaDetails": {
+                "lottie": {},
+                "video": {}
+            }
+        },
+        "reviewsSummary": {},
+        "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+        "restaurantOfferPresentationInfo": {},
+        "externalRatings": {
+            "aggregatedRating": {
+                "rating": "--"
+            }
+        },
+        "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {},
+    "cta": {
+        "link": "swiggy://menu?restaurant_id=407887",
+        "text": "RESTAURANT_MENU",
+        "type": "DEEPLINK"
+    }
+},
 ];
 export default resList;
