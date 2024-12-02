@@ -47,7 +47,7 @@ const Approut=createBrowserRouter([
         element:<Contact/>,
       },
       {
-        path:"/resturant/:resid",
+        path:"/resturant/:resId",
         element:<Resturantcardmenu/>,
       },
       

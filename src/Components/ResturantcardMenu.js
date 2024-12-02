@@ -6,16 +6,18 @@ import { MENU_URL } from "../Utils/EssenstialLink";
 const Resturantcardmenu = () => {
   const [resInfo, setresInfo] = useState(null);
   const { resId } = useParams();
-  console.log(resId);
-  
 
   useEffect(() => {
+    if (!resId) {
+      console.error("Error: resId is undefined. Check your route or URL.");
+      return;
+    }
     Fetchmenu();
-  }, []);
+  }, [resId]);
 
   const Fetchmenu = async () => {
     try {
-      const data = await fetch(MENU_URL + resId);
+      const data = await fetch(`${MENU_URL}${resId}&submitAction=ENTER`);
       const json = await data.json();
       console.log("API Response:", json);
       setresInfo(json.data);
@@ -26,17 +28,16 @@ const Resturantcardmenu = () => {
 
   if (!resInfo) return <Shimmer />;
 
-  // Log to verify the response structure
+  // Log the restaurant info for debugging
   console.log("Restaurant Info:", resInfo);
 
-  // Optional chaining with default values
+  // Safely extract data using optional chaining
   const name = resInfo?.cards?.[2]?.card?.card?.info?.name || "No Name Available";
   const cuisines = resInfo?.cards?.[2]?.card?.card?.info?.cuisines || [];
   const costForTwoMessage =
     resInfo?.cards?.[2]?.card?.card?.info?.costForTwoMessage || "Cost details not available";
   const itemCards =
-    resInfo?.cards?.[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[2]?.card?.card?.itemCards ||
-    [];
+    resInfo?.cards?.[5]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.[2]?.card?.card?.itemCards || [];
 
   return (
     <div className="menu">
@@ -48,7 +49,7 @@ const Resturantcardmenu = () => {
       <ul>
         {itemCards.map((item) => (
           <li key={item.card.info.id}>
-            {item.card.info.name} - {"Rs"} {item.card.info.price / 100 ||item.card.info.defaultprice/100  }
+            {item.card.info.name} - Rs {item.card.info.price / 100 || item.card.info.defaultPrice / 100}
           </li>
         ))}
       </ul>

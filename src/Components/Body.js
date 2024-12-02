@@ -114,7 +114,7 @@ const Body = () => {
       </div>
       <div className="res-cont">
       {FilteredRest.map((resData, index) => (
-  <Link
+  <Link style={{textDecoration: 'none'}}
     key={`${resData.info.id}-${index}`}
     to={`/resturant/${resData.info.id}`}
   >

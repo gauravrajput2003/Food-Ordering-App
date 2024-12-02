@@ -1,6 +1,8 @@
 import { useState } from "react";
-import { LOGO_URL } from "../Utils/EssenstialLink";
+ //import { LOGO_URL } from "../Utils/EssenstialLink";
 import { Link } from "react-router-dom";
+import LOGO_URL from "../Utils/Red and Yellow Catering Flat Illustrative Food Place Logo.png"; 
+
 
 const Header = () => {
 

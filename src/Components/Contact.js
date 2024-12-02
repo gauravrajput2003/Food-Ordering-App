@@ -1,10 +1,9 @@
-const Contact=()=>{
-    return(
-
-            <div className="contact-us">
+const Contact = () => {
+  return (
+    <div className="contact-us">
       <h2>Contact Us</h2>
       <p>Feel free to reach out to us through the form below!</p>
-      <form>
+      <form className="form">
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input type="text" id="name" name="name" required />
@@ -19,8 +18,8 @@ const Contact=()=>{
         </div>
         <button type="submit">Submit</button>
       </form>
+    </div>
+  );
+};
 
-        </div>
-    )
-}
 export default Contact;
