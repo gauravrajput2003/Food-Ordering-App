@@ -1,4 +1,96 @@
 const resList= [
+
+  {
+    "info": {
+      "id": "707536",
+      "name": "Mr. Paratha",
+      "cloudinaryImageId": "ee4131fd2ba063b8fe1b815586d1fe83",
+      "locality": "Noida",
+      "areaName": "Crossing Republic",
+      "costForTwo": "₹200 for two",
+      "cuisines": [
+        "North Indian",
+        "Indian"
+      ],
+      "avgRating": 4,
+      "parentId": "140339",
+      "avgRatingString": "4.0",
+      "totalRatingsString": "277",
+      "promoted": true,
+      "adTrackingId": "cid=21722464~p=1~adgrpid=21722464#ag1~mp=SWIGGY_IN~bl=FOOD~aet=RESTAURANT~aeid=707536~eid=1bb612d1-597f-4c38-9f51-8fcaeeb5d698~srvts=1732425415400~collid=45826",
+      "sla": {
+        "deliveryTime": 36,
+        "lastMileTravel": 2.8,
+        "serviceability": "SERVICEABLE",
+        "slaString": "35-40 mins",
+        "lastMileTravelString": "2.8 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-12-01 00:00:00",
+        "opened": true
+      },
+      "badges": {
+        
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "textExtendedBadges": {
+            
+          },
+          "textBased": {
+            
+          },
+          "imageBased": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹150 OFF",
+        "subHeader": "ABOVE ₹349",
+        "discountTag": "FLAT DEAL",
+        "logoCtx": {
+          "text": "BENEFITS"
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY",
+      "campaignId": "21722464"
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "swiggy://menu?restaurant_id=707536",
+      "text": "RESTAURANT_MENU",
+      "type": "DEEPLINK"
+    }
+  },
   {
     "info": {
       "id": "981146",
@@ -86,6 +178,117 @@ const resList= [
     },
     "cta": {
       "link": "swiggy://menu?restaurant_id=981146",
+      "text": "RESTAURANT_MENU",
+      "type": "DEEPLINK"
+    }
+  },
+  {
+    "info": {
+      "id": "173374",
+      "name": "Faasos - Wraps, Rolls & Shawarma",
+      "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/7/28/4bfd1c0a-b42a-47dd-bff4-13197ac0ec3a_173374.JPG",
+      "locality": "Gaur Global Village",
+      "areaName": "crossing republic",
+      "costForTwo": "₹200 for two",
+      "cuisines": [
+        "Kebabs",
+        "Fast Food",
+        "Snacks",
+        "American",
+        "Healthy Food",
+        "Desserts",
+        "Beverages"
+      ],
+      "avgRating": 4.3,
+      "parentId": "21809",
+      "avgRatingString": "4.3",
+      "totalRatingsString": "6.4K+",
+      "sla": {
+        "deliveryTime": 32,
+        "lastMileTravel": 1,
+        "serviceability": "SERVICEABLE",
+        "slaString": "30-35 mins",
+        "lastMileTravelString": "1.0 km",
+        "iconType": "ICON_TYPE_EMPTY"
+      },
+      "availability": {
+        "nextCloseTime": "2024-11-24 23:59:00",
+        "opened": true
+      },
+      "badges": {
+        "imageBadges": [
+          {
+            "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Rolls.png",
+            "description": "Delivery!"
+          }
+        ]
+      },
+      "isOpen": true,
+      "type": "F",
+      "badgesV2": {
+        "entityBadges": {
+          "textBased": {
+            
+          },
+          "imageBased": {
+            "badgeObject": [
+              {
+                "attributes": {
+                  "imageId": "Green%20Dot%20Awards/Best%20In%20Veg%20Rolls.png",
+                  "description": "Delivery!"
+                }
+              }
+            ]
+          },
+          "textExtendedBadges": {
+            
+          }
+        }
+      },
+      "aggregatedDiscountInfoV3": {
+        "header": "₹125 OFF",
+        "subHeader": "ABOVE ₹199",
+        "discountTag": "FLAT DEAL",
+        "discountCalloutInfo": {
+          "message": "Free Delivery",
+          "logoCtx": {
+            "logo": "v1655895371/free_delivery_logo_hqipbo.png"
+          }
+        },
+        "logoCtx": {
+          "text": "BENEFITS"
+        }
+      },
+      "differentiatedUi": {
+        "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+        "differentiatedUiMediaDetails": {
+          "lottie": {
+            
+          },
+          "video": {
+            
+          }
+        }
+      },
+      "reviewsSummary": {
+        
+      },
+      "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+      "restaurantOfferPresentationInfo": {
+        
+      },
+      "externalRatings": {
+        "aggregatedRating": {
+          "rating": "--"
+        }
+      },
+      "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+    },
+    "analytics": {
+      
+    },
+    "cta": {
+      "link": "swiggy://menu?restaurant_id=173374",
       "text": "RESTAURANT_MENU",
       "type": "DEEPLINK"
     }

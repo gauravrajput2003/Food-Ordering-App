@@ -9,6 +9,7 @@ import Body from "./Components/Body";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import Error from "./Components/Error";
+import Resturantcardmenu from "./Components/ResturantcardMenu";
 import { createBrowserRouter,RouterProvider, Outlet } from "react-router-dom";
 
 // Restaurant data for "Rominus Pizza And Burger"
@@ -44,7 +45,11 @@ const Approut=createBrowserRouter([
       {
         path:"/contact",
         element:<Contact/>,
-      }
+      },
+      {
+        path:"/resturant/:resid",
+        element:<Resturantcardmenu/>,
+      },
       
     ],
     errorElement:<Error/>,

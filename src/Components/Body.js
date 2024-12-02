@@ -4,6 +4,7 @@
 
 // const Body = () => {
 //   const [ListofResturant, setListofResturant] = useState([]);
+//  const [FilteredRest, setFilteredRest] = useState([]);
 
 //   useEffect(() => {
 //     fetchdata();
@@ -12,16 +13,19 @@
 //   const fetchdata = async () => {
 //     try {
 //       const data = await fetch(
-//         "https://cors-anywhere.herokuapp.com//https://www.swiggy.com/mapi/homepage/getCards?lat=28.6321135&lng=77.4434152"
+//         "https://www.swiggy.com/mapi/restaurants/list/v5?offset=0&is-seo-homepage-enabled=true&lat=28.6302312&lng=77.4349177&carousel=true&third_party_vendor=1"
 //       );
 //       const json = await data.json();
+
   
     
 //       // Extract restaurants
 //       const restaurants =
-//       json?.data?.success?.cards[2]?.gridWidget?.gridElement?.infoWithStyle?.restaurants || [];
-//       console.log("Fetched Restaurants:", restaurants);
+//       json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants
+//       ;
+//       console.log(restaurants);
 //       setListofResturant(restaurants);
+//       setFilteredRest(restaurants);
 //     } catch (error) {
 //       console.error("Error fetching data:", error);
 //     }
@@ -49,8 +53,8 @@
 //         </button>
 //       </div>
 //       <div className="res-cont">
-//         {ListofResturant.map((resData, index) => (
-//           <Resturantcard key={resData.info.id || index} resData={resData} />
+//         {FilteredRest.map((resData) => (
+//           <ResturantCard key={resData.info.id } resData={resData} />
 //         ))}
 //       </div>
 //     </div>
@@ -60,6 +64,8 @@
 import {useState } from "react";
 import Resturantcard from "./Resturantcard";
 import resList from "../Utils/RawData";
+import Resturantcardmenu from "./ResturantcardMenu";
+import { Link } from "react-router-dom";
 const Body = () => {
   // State variables
   const [ListofResturant,setListofResturant] = useState(resList); // Original unfiltered list
@@ -107,9 +113,15 @@ const Body = () => {
         </button>
       </div>
       <div className="res-cont">
-        {FilteredRest.map((resData) => (
-          <Resturantcard key={resData.info.id} resData={resData} />
-        ))}
+      {FilteredRest.map((resData, index) => (
+  <Link
+    key={`${resData.info.id}-${index}`}
+    to={`/resturant/${resData.info.id}`}
+  >
+    <Resturantcard resData={resData} />
+  </Link>
+))}
+
       </div>
     </div>
   );
