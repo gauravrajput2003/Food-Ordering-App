@@ -16,7 +16,7 @@ ul li a {
   color: inherit;        
 }
 ul li a:hover {
-  color: blue;           
+  color: rgb(255, 0, 4);           
   text-decoration: ; 
 }
 .logo{
@@ -239,4 +239,12 @@ cursor: pointer;
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
-  
+  .user-card{
+    margin-top: 20px;
+    padding: 20px;
+    border: 2px solid black;
+  }
+  .red{
+    /* background-color: red; */
+    color: red;
+  }

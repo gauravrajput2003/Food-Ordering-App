@@ -1,3 +1,5 @@
+import Userclass from "./Userclass";
+import User from "./User";
 const About = () => {
   return (
     <div>
@@ -29,6 +31,8 @@ const About = () => {
         delightful adventure. At Burger Khayga junction, good food is always
         just a click away!
       </big>{" "}
+      {/* <User name={"Gaurav Singh"}/>
+      <Userclass name={"Gaurav Singh"} location={"Jhumari Taliya"} /> */}
     </div>
   );
 };

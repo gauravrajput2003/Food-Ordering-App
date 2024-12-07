@@ -17,8 +17,9 @@ const Resturantcard = (props) => {
         <h3>{resData.info.name}</h3>
         <h3>{resData?.info.cuisines?.join(",") || "Cuisines not available"}</h3>
         <h4>{areaName}</h4>
-        <h4>{avgRatingString+"⭐"}</h4>
-        <h4>{costForTwo}</h4>
+        <h3 style={{color:"green"}}>{avgRatingString+"⭐"}</h3>
+        <h4 style={{ fontWeight: 800 }}>{costForTwo}</h4>
+
         <h4>{lastMileTravelString}</h4>
       </div>
     );

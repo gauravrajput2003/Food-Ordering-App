@@ -66,12 +66,18 @@ import Resturantcard from "./Resturantcard";
 import resList from "../Utils/RawData";
 import Resturantcardmenu from "./ResturantcardMenu";
 import { Link } from "react-router-dom";
+import useOnlinestatus from "./useonlinestatus";
+ import Game from "./Game";
+
 const Body = () => {
   // State variables
   const [ListofResturant,setListofResturant] = useState(resList); // Original unfiltered list
   const [FilteredRest, setFilteredRest] = useState(resList); // Currently filtered list
   const [searchText, setsearchText] = useState(""); // Search text state
-
+  const onlinestatus=useOnlinestatus();
+  if (!onlinestatus) {
+    return <Game/>
+  }
   return (
     <div className="body">
       <div className="filter">
@@ -112,6 +118,8 @@ const Body = () => {
           Top-Rated
         </button>
       </div>
+     
+    
       <div className="res-cont">
       {FilteredRest.map((resData, index) => (
   <Link style={{textDecoration: 'none'}}
