@@ -80,18 +80,19 @@ const Body = () => {
   }
   return (
     <div className="body">
-      <div className="filter">
-        <div className="search">
-          <input
+      <div className="filter p-6 bg-pink-50 my-2 flex items-center justify-start">
+        <div className=" search p-6 bg-pink-50 my-2 ">
+          <input 
             type="text"
-            className="search-box"
+            placeholder="Search..."
+            className="search-box focus:bg-green-50 font-semibold"
             value={searchText}
             onChange={(e) => {
               setsearchText(e.target.value);
             }}
           />
           <button
-            className="search-btn"
+            className="px-4 ml-1 text-white bg-sky-500 rounded-md hover:bg-sky-700 h-7 " 
             onClick={() => {
               console.log("Search Text:", searchText);
               // Filter the current filtered list based on search text
@@ -105,7 +106,7 @@ const Body = () => {
           </button>
         </div>
         <button
-          className="filter-btn"
+          className="px-4 ml-1 text-white rounded-md h-7 bg-green-600 hover:bg-green-400 active:bg-green-950 focus:outline-none focus:ring focus:ring-violet-300 ..."
           onClick={() => {
             console.log("Applying Top-Rated Filter");
             // Filter the original list for top-rated restaurants
@@ -120,7 +121,7 @@ const Body = () => {
       </div>
      
     
-      <div className="res-cont">
+      <div className=" flex flex-wrap px-10 rounded-md">
       {FilteredRest.map((resData, index) => (
   <Link style={{textDecoration: 'none'}}
     key={`${resData.info.id}-${index}`}

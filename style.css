@@ -1,3 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+
+
+/*
 .header{
     display: flex;
     justify-content: space-between;
@@ -6,11 +15,7 @@
    
    
 }
-/* .header:hover{
-  background-color: aquamarine;
-  border: 3px solid black;
-  border-radius: 8px;
-} */
+
 ul li a {
   text-decoration: none; 
   color: inherit;        
@@ -109,7 +114,7 @@ margin-left: 10px;
   }
   .filter{
 display: flex;
-/* margin-top: 10px; */
+
   }
   .filter-btn{
     width: 200px;
@@ -245,6 +250,8 @@ cursor: pointer;
     border: 2px solid black;
   }
   .red{
-    /* background-color: red; */
-    color: red;
+   
+    color: rgb(149, 29, 29);
   }
+  
+*/

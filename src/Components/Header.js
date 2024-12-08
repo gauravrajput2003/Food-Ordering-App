@@ -1,41 +1,81 @@
 import { useState } from "react";
- //import { LOGO_URL } from "../Utils/EssenstialNavLink";
-import { NavLink, NavNavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import LOGO_URL from "../Utils/Red and Yellow Catering Flat Illustrative Food Place Logo.png"; 
 import useOnlinestatus from "./useonlinestatus";
 
-
 const Header = () => {
+  const [btnNameReact, setbtnNameReact] = useState("Login");
+  const online = useOnlinestatus();
 
-const[btnNameReact,setbtnNameReact]=useState("Login");
-const online=useOnlinestatus();
-    return (
-
-      <div className="header">
-        <div className="logo-cont">
-          <img className="logo" src={LOGO_URL} />
-        </div>
-        <div className="nav-item">
-          <ul>
-            <li>
-              Online:{online?"✅":"🚨"}
-            </li>
-            <li><NavLink className={(e)=>{return e.isActive?"red":""} } to="/">Home</NavLink></li>
-            <li><NavLink className={(e)=>{return e.isActive?"red":""} } to="/about">About</NavLink> </li>
-            <li><NavLink className={(e)=>{return e.isActive?"red":""} } to="/contact">Contact</NavLink></li>
-            <li><NavLink className={(e)=>{return e.isActive?"red":""} } to="/cart">Cart</NavLink></li>
-            
-            <button className="login-btn" onClick={()=>{
-if(btnNameReact=="Login"){
-  setbtnNameReact("Logout")
-}
-else{
-  setbtnNameReact("Login")
-}
-            }}>{btnNameReact}</button>
-          </ul>
-        </div>
+  return (
+    <div className="flex justify-between items-center bg-pink-100 shadow-lg px-4">
+      {/* Logo Section */}
+      <div className="logo-cont">
+        <img className="h-20 p-2" src={LOGO_URL} alt="Logo" />
       </div>
-    );
-  };
-  export default Header;
+
+      {/* Navigation Links */}
+      <div className="nav-item">
+        <ul className="flex space-x-6">
+          <li className="px-2 font-bold">
+            Online: {online ? "✅" : "🚨"}
+          </li>
+          <li className="px-2 font-bold">
+            <NavLink 
+              className={(e) => (e.isActive ? "text-red-500" : "")} 
+              to="/"
+            >
+              Home
+            </NavLink>
+          </li>
+          <li className="px-2 font-bold">
+            <NavLink 
+              className={(e) => (e.isActive ? "text-red-500" : "")} 
+              to="/about"
+            >
+              About
+            </NavLink>
+          </li>
+          <li className="px-2 font-bold">
+            <NavLink 
+              className={(e) => (e.isActive ? "text-red-500" : "")} 
+              to="/contact"
+            >
+              Contact
+            </NavLink>
+          </li>
+          <li className="px-2 font-bold">
+            <NavLink 
+              className={(e) => (e.isActive ? "text-red-500" : "")} 
+              to="/grocery"
+            >
+              Grocery
+            </NavLink>
+          </li>
+          <li className="px-2 font-bold">
+            <NavLink 
+              className={(e) => (e.isActive ? "text-red-500" : "")} 
+              to="/cart"
+            >
+              Cart
+            </NavLink>
+          </li>
+        </ul>
+      </div>
+
+      {/* Login Button */}
+      <div>
+        <button
+          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-700"
+          onClick={() => {
+            setbtnNameReact((prevState) => (prevState === "Login" ? "Logout" : "Login"));
+          }}
+        >
+          {btnNameReact}
+        </button>
+      </div>
+    </div>
+  );
+};
+
+export default Header;
