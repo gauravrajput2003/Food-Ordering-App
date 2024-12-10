@@ -62,7 +62,7 @@
 // };
 // export default Body;
 import {useState } from "react";
-import Resturantcard from "./Resturantcard";
+import Resturantcard,{withPromoted} from "./Resturantcard";
 import resList from "../Utils/RawData";
 import Resturantcardmenu from "./ResturantcardMenu";
 import { Link } from "react-router-dom";
@@ -75,6 +75,7 @@ const Body = () => {
   const [FilteredRest, setFilteredRest] = useState(resList); // Currently filtered list
   const [searchText, setsearchText] = useState(""); // Search text state
   const onlinestatus=useOnlinestatus();
+  const WithpromoptedCard=withPromoted(Resturantcard);
   if (!onlinestatus) {
     return <Game/>
   }
@@ -123,13 +124,19 @@ const Body = () => {
     
       <div className=" flex flex-wrap px-10 rounded-md">
       {FilteredRest.map((resData, index) => (
-  <Link style={{textDecoration: 'none'}}
+  <Link
+    style={{ textDecoration: "none" }}
     key={`${resData.info.id}-${index}`}
     to={`/resturant/${resData.info.id}`}
   >
-    <Resturantcard resData={resData} />
+    {resData.info.promoted ? (
+      <WithpromoptedCard resData={resData} />
+    ) : (
+      <Resturantcard resData={resData} />
+    )}
   </Link>
 ))}
+
 
       </div>
     </div>
