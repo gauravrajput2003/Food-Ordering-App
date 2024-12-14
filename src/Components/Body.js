@@ -61,13 +61,14 @@
 //   );
 // };
 // export default Body;
-import {useState } from "react";
+import {useContext, useState } from "react";
 import Resturantcard,{withPromoted} from "./Resturantcard";
 import resList from "../Utils/RawData";
 import Resturantcardmenu from "./ResturantcardMenu";
 import { Link } from "react-router-dom";
 import useOnlinestatus from "./useonlinestatus";
  import Game from "./Game";
+//import Usercontext from "../Utils/UserContext";
 
 const Body = () => {
   // State variables
@@ -79,6 +80,7 @@ const Body = () => {
   if (!onlinestatus) {
     return <Game/>
   }
+  //const {Logined,setusername}=useContext(Usercontext);
   return (
     <div className="body">
       <div className="filter p-6 bg-pink-50 my-2 flex items-center justify-start">
@@ -119,10 +121,11 @@ const Body = () => {
         >
           Top-Rated
         </button>
+        
       </div>
      
     
-      <div className=" flex flex-wrap px-10 rounded-md">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">
       {FilteredRest.map((resData, index) => (
   <Link
     style={{ textDecoration: "none" }}

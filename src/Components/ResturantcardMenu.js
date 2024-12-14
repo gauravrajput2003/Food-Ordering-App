@@ -32,13 +32,13 @@ const Resturantcardmenu = () => {
         {cuisines.length > 0 ? cuisines.join(", ") : "Cuisines not available"} - {costForTwoMessage}
       </p>
       {/* <h2 >😋Menu😋</h2> */}
-      {/* <ul>
+      {/* { <ul>
         {itemCards.map((item) => (
           <li key={item.card.info.id}>
             {item.card.info.name} - Rs {item.card.info.price / 100 || item.card.info.defaultPrice / 100}
           </li>
         ))}
-      </ul> */}
+      </ul> } */}
     {categories.map((category, index) => (
   <ResturantCategory key={index} data={category?.card?.card}
   showitems={index===showindex?true:false}
