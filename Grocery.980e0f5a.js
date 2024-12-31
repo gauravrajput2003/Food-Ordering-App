@@ -1,0 +1,2 @@
+var e=globalThis.parcelRequire94c2;(0,e.register)("iO0e0",function(r,i){Object.defineProperty(r.exports,"__esModule",{value:!0,configurable:!0}),Object.defineProperty(r.exports,"default",{get:()=>c,set:void 0,enumerable:!0,configurable:!0});var o=e("ayMG0");e("acw62");var c=()=>/*#__PURE__*/(0,o.jsx)("div",{children:/*#__PURE__*/(0,o.jsx)("h1",{children:"Welcome to Grocery Section!!!!"})})});
+//# sourceMappingURL=Grocery.980e0f5a.js.map

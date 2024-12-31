@@ -1,0 +1,13 @@
+1 ->npm int
+2-> fill all data 
+keep all things default 
+3->you get packge json file
+4->npm i
+4->npm install -D parcel
+5->npm i react
+6->npm i react-dom
+
+now import react in .js file
+import React from "react"
+import ReactDOM from "react-dom"
+
