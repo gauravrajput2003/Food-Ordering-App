@@ -49,6 +49,7 @@ const Contact = () => {
             Submit
           </button>
         </form>
+        <img src="https://f.hubspotusercontent40.net/hubfs/4592742/shutterstock_1705576870%20%281%29.jpg"/>
       </div>
     </div>
   );
